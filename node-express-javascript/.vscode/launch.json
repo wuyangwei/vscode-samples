@@ -10,13 +10,13 @@
 			// Type of configuration. Possible values: "node", "mono".
 			"type": "node",
 			// Workspace relative or absolute path to the program.
-			"program": "${workspaceRoot}/bin/www",
+			"program": "./bin/www",
 			// Automatically stop program after launch.
 			"stopOnEntry": false,
 			// Command line arguments passed to the program.
 			"args": [],
 			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
-			"cwd": "${workspaceRoot}",
+			"cwd": ".",
 			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
 			"runtimeExecutable": null,
 			// Optional arguments passed to the runtime executable.
@@ -33,11 +33,11 @@
 			"name": "Debug Tests",
 			"type": "node",
 			// Notice, we bypass the launcher and start the test runner directly
-			"program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+			"program": "node_modules/mocha/bin/_mocha",
 			"stopOnEntry": true,
 			// run the tests in the tests folder
 			"args": ["tests"],
-			"cwd": "${workspaceRoot}",
+			"cwd": ".",
 			"runtimeExecutable": null,
 			"env": { }
 		}, 
